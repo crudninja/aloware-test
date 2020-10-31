@@ -30,7 +30,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        set_include_path(get_include_path() . PATH_SEPARATOR . base_path().'/app/Inspections');
 
         parent::boot();
     }
